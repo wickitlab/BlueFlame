@@ -53,7 +53,13 @@ export class ControlPipeClient {
 
   connect() {
     if (!this.readyPromise) {
-      this.readyPromise = this._connect();
+      // Clear the cached promise if the first connect fails, so a later call()
+      // can retry instead of re-awaiting the same rejected promise forever.
+      this.readyPromise = this._connect().catch((err) => {
+        this.readyPromise = null;
+        this.socket = null;
+        throw err;
+      });
     }
     return this.readyPromise;
   }
@@ -71,7 +77,10 @@ export class ControlPipeClient {
       socket.setEncoding("utf8");
     }
     socket.on("data", (chunk) => this._onData(chunk));
-    socket.on("close", () => this._failAll(new Error("control pipe closed")));
+    socket.on("close", () => {
+      this.readyPromise = null; // allow a later call() to reconnect
+      this._failAll(new Error("control pipe closed"));
+    });
     socket.on("error", (err) => this._failAll(err));
 
     const handshakeDone = new Promise((resolve, reject) => {
