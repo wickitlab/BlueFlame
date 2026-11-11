@@ -255,7 +255,7 @@ fn render(engine: SearchEngine, tiles: &[Tile]) -> String {
   <div class="section">
     <div class="section-label"><span class="hash">#</span> shortcuts</div>
     <div class="shortcuts">
-      <a href="https://github.com/w1ck3ds0d4/BlueFlame">github</a>
+      <a href="https://github.com/wickitlab/BlueFlame">github</a>
       <a href="https://en.wikipedia.org/">wikipedia</a>
       <a href="https://news.ycombinator.com/">hacker news</a>
     </div>

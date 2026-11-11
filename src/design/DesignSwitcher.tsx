@@ -27,7 +27,7 @@ export const STANDALONE_SCREENS: { id: string; label: string; href: string }[] =
   { id: 'menu-hamburger', label: 'Hamburger menu popup', href: '?panel=menu&kind=hamburger&view=dashboard' },
   { id: 'menu-kebab', label: 'Kebab menu popup', href: '?panel=menu&kind=kebab&view=dashboard&bookmarked=1&browsing=1' },
   { id: 'context-menu', label: 'Context menu popup', href: '?panel=context' },
-  { id: 'trust-popup', label: 'Trust popup', href: '?panel=trust&url=https://github.com/w1ck3ds0d4/BlueFlame&tab=overview' },
+  { id: 'trust-popup', label: 'Trust popup', href: '?panel=trust&url=https://github.com/wickitlab/BlueFlame&tab=overview' },
 ];
 
 export type ScreenId = (typeof SCREENS)[number]['id'] | (typeof STANDALONE_SCREENS)[number]['id'];

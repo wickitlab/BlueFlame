@@ -2,10 +2,10 @@
 name = "blueflame"
 version = "0.2.0"
 description = "BlueFlame - privacy-first browser shell with embedded MITM filter proxy"
-authors = ["w1ck3ds0d4 <support@wickitlab.com>"]
+authors = ["WickIT Lab <support@wickitlab.com>"]
 edition = "2021"
 license = "AGPL-3.0-or-later"
-repository = "https://github.com/w1ck3ds0d4/BlueFlame"
+repository = "https://github.com/wickitlab/BlueFlame"
 
 [lib]
 name = "blueflame_lib"

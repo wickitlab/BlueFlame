@@ -913,7 +913,7 @@ mod tests {
     fn default_filters_let_regular_traffic_through() {
         let rs = RegexSet::new(default_filter_patterns()).unwrap();
         assert!(!rs.is_match("https://example.com/index.html"));
-        assert!(!rs.is_match("https://github.com/w1ck3ds0d4/BlueFlame"));
+        assert!(!rs.is_match("https://github.com/wickitlab/BlueFlame"));
     }
 
     #[test]

@@ -63,7 +63,7 @@ For Android builds:
 ### Clone and install
 
 ```bash
-git clone https://github.com/w1ck3ds0d4/BlueFlame.git
+git clone https://github.com/wickitlab/BlueFlame.git
 cd BlueFlame
 pnpm install
 ```

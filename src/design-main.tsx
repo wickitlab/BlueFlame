@@ -150,8 +150,8 @@ if (panelParam === 'trust') {
 } else if (panelParam === 'context') {
   window.setTimeout(() => {
     void emit('context-menu:payload', {
-      page_url: 'https://github.com/w1ck3ds0d4/BlueFlame',
-      link_url: 'https://github.com/w1ck3ds0d4/BlueFlame/blob/main/README.md',
+      page_url: 'https://github.com/wickitlab/BlueFlame',
+      link_url: 'https://github.com/wickitlab/BlueFlame/blob/main/README.md',
       link_text: 'README.md',
       image_url: null,
       selection_text: null,

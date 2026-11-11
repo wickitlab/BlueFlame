@@ -104,7 +104,7 @@ fn validate_each(candidates: Vec<String>) -> (Vec<String>, usize) {
 /// Fetch a list from its URL and return the raw body.
 pub async fn fetch(url: &str) -> anyhow::Result<String> {
     let client = reqwest::Client::builder()
-        .user_agent("BlueFlame/0.1 (+https://github.com/w1ck3ds0d4/BlueFlame)")
+        .user_agent("BlueFlame/0.1 (+https://github.com/wickitlab/BlueFlame)")
         .timeout(std::time::Duration::from_secs(30))
         .build()
         .context("building HTTP client")?;

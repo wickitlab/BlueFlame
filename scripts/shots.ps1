@@ -145,7 +145,7 @@ $shots = @(
     @{ id = 'menu-hamburger'; query = 'panel=menu&kind=hamburger&view=dashboard' }
     @{ id = 'menu-kebab'; query = 'panel=menu&kind=kebab&view=dashboard&bookmarked=1&browsing=1' }
     @{ id = 'context-menu'; query = 'panel=context' }
-    @{ id = 'trust-popup'; query = 'panel=trust&url=https://github.com/w1ck3ds0d4/BlueFlame&tab=overview' }
+    @{ id = 'trust-popup'; query = 'panel=trust&url=https://github.com/wickitlab/BlueFlame&tab=overview' }
 )
 # Dark at both sizes, every screen. Light only for the after set, only
 # at the laptop width the design system asks a console screen be

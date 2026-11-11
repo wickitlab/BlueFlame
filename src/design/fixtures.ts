@@ -30,7 +30,7 @@ export const FAVICONS: Record<string, string> = {
 
 export const TABS: FixtureTab[] = [
   { id: 1, url: 'https://news.ycombinator.com/', title: 'Hacker News', loading: false, private: false },
-  { id: 2, url: 'https://github.com/w1ck3ds0d4/BlueFlame', title: 'w1ck3ds0d4/BlueFlame', loading: false, private: false },
+  { id: 2, url: 'https://github.com/wickitlab/BlueFlame', title: 'wickitlab/BlueFlame', loading: false, private: false },
   { id: 3, url: 'https://docs.rs/tauri/latest/tauri/', title: 'tauri - Rust', loading: true, private: false },
   { id: 4, url: 'https://mail.proton.me/u/0/inbox', title: 'Inbox - Proton Mail', loading: false, private: true },
   { id: 5, url: 'https://wickitlab.com/', title: 'WickIT Lab', loading: false, private: false },
@@ -60,13 +60,13 @@ export const STATS = {
 };
 
 export const CA_TRUST_TRUSTED = {
-  cert_path: 'C:\\Users\\dev\\AppData\\Local\\BlueFlame\\ca\\blueflame-root.pem',
+  cert_path: 'C:\\Users\\user\\AppData\\Local\\BlueFlame\\ca\\blueflame-root.pem',
   trusted: true,
   auto_install_supported: true,
 };
 
 export const CA_TRUST_UNTRUSTED = {
-  cert_path: 'C:\\Users\\dev\\AppData\\Local\\BlueFlame\\ca\\blueflame-root.pem',
+  cert_path: 'C:\\Users\\user\\AppData\\Local\\BlueFlame\\ca\\blueflame-root.pem',
   trusted: false,
   auto_install_supported: true,
 };
@@ -99,7 +99,7 @@ export const RECENT_BLOCKS = Array.from({ length: 60 }, (_, i) => ({
 
 export const BOOKMARKS = [
   { url: 'https://news.ycombinator.com/', title: 'Hacker News', created_at: now - 86_400_000 * 40, folder: '' },
-  { url: 'https://github.com/w1ck3ds0d4/BlueFlame', title: 'w1ck3ds0d4/BlueFlame', created_at: now - 86_400_000 * 20, folder: 'dev' },
+  { url: 'https://github.com/wickitlab/BlueFlame', title: 'wickitlab/BlueFlame', created_at: now - 86_400_000 * 20, folder: 'dev' },
   { url: 'https://docs.rs/tauri/latest/tauri/', title: 'tauri - Rust', created_at: now - 86_400_000 * 18, folder: 'dev' },
   { url: 'https://wickitlab.com/', title: 'WickIT Lab', created_at: now - 86_400_000 * 5, folder: 'work' },
   { url: 'https://en.wikipedia.org/wiki/Tor_(network)', title: 'Tor (network) - Wikipedia', created_at: now - 86_400_000 * 3, folder: 'reading' },
@@ -109,7 +109,7 @@ export const BOOKMARK_FOLDERS = ['dev', 'work', 'reading'];
 
 export const HISTORY = [
   { id: 1, url: 'https://news.ycombinator.com/', title: 'Hacker News', visited_at: now - 60_000, visit_count: 34 },
-  { id: 2, url: 'https://github.com/w1ck3ds0d4/BlueFlame', title: 'w1ck3ds0d4/BlueFlame', visited_at: now - 300_000, visit_count: 12 },
+  { id: 2, url: 'https://github.com/wickitlab/BlueFlame', title: 'wickitlab/BlueFlame', visited_at: now - 300_000, visit_count: 12 },
   { id: 3, url: 'https://docs.rs/tauri/latest/tauri/', title: 'tauri - Rust', visited_at: now - 900_000, visit_count: 4 },
   { id: 4, url: 'https://wickitlab.com/', title: 'WickIT Lab', visited_at: now - 3_600_000, visit_count: 8 },
   { id: 5, url: 'https://en.wikipedia.org/wiki/Tor_(network)', title: 'Tor (network) - Wikipedia', visited_at: now - 7_200_000, visit_count: 1 },
@@ -120,8 +120,8 @@ export const HISTORY = [
 // Downloads.tsx only shows an active row while a
 // 'blueflame:download-progress' event says so, never from the log list.
 export const DOWNLOADS = [
-  { id: 2, url: 'https://github.com/w1ck3ds0d4/BlueFlame/archive/refs/heads/main.zip', filename: 'BlueFlame-main.zip', path: 'C:\\Users\\dev\\Downloads\\BlueFlame-main.zip', size: 3_400_000, ts: nowSec - 3600 },
-  { id: 1, url: 'https://docs.rs/-/latest/tauri.pdf', filename: 'tauri-notes.pdf', path: 'C:\\Users\\dev\\Downloads\\tauri-notes.pdf', size: 812_000, ts: nowSec - 86400 },
+  { id: 2, url: 'https://github.com/wickitlab/BlueFlame/archive/refs/heads/main.zip', filename: 'BlueFlame-main.zip', path: 'C:\\Users\\user\\Downloads\\BlueFlame-main.zip', size: 3_400_000, ts: nowSec - 3600 },
+  { id: 1, url: 'https://docs.rs/-/latest/tauri.pdf', filename: 'tauri-notes.pdf', path: 'C:\\Users\\user\\Downloads\\tauri-notes.pdf', size: 812_000, ts: nowSec - 86400 },
 ];
 
 export const DOWNLOAD_IN_PROGRESS_ID = 3;
@@ -225,7 +225,7 @@ export const TRUST_HISTORY = Array.from({ length: 48 }, (_, i) => ({
 
 export const URL_SUGGESTIONS = [
   { url: 'https://news.ycombinator.com/', title: 'Hacker News', source: 'history' as const, visit_count: 34 },
-  { url: 'https://github.com/w1ck3ds0d4/BlueFlame', title: 'w1ck3ds0d4/BlueFlame', source: 'bookmark' as const, visit_count: 12 },
+  { url: 'https://github.com/wickitlab/BlueFlame', title: 'wickitlab/BlueFlame', source: 'bookmark' as const, visit_count: 12 },
 ];
 
 export const APPROVAL_REQUEST = { request_id: 1, origin: 'https://docs.rs', tab_id: 3 };
