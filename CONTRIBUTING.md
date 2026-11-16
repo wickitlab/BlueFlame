@@ -22,6 +22,7 @@ libssl-dev libayatana-appindicator3-dev librsvg2-dev`; install the equivalents l
 pnpm tsc --noEmit
 pnpm build
 cd src-tauri && cargo fmt --check && cargo clippy --all-targets -- -D warnings && cargo test --all
+cd mcp-bridge && pnpm install && pnpm test   # only when mcp-bridge/ changes
 ```
 
 CI runs the frontend checks and the Rust checks as separate jobs; both must be green. There is
